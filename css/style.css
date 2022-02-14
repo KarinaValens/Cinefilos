@@ -1,0 +1,53 @@
+/* ---Reset--- */
+
+body,
+a,
+ul,
+li {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ---variables--- */
+:root {
+  --bg-color: #110401;
+  --link-color: #bf472c;
+  --link-hover-color: #ffffff;
+  --color-4: #9e0409;
+  --color-5: #707070;
+
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Playfair Display", serif;
+  --main-text-color: #000;
+
+  --white-space: 1rem;
+}
+/* --- based styles--- */
+
+* {
+  box-sizing: border-box;
+  /* outline: 2px dotted red; */
+}
+
+/* debo revizar esta formula */
+html {
+  font-size: calc(1vw + 1vh + 0.5vmin);
+}
+
+/* ---header--- */
+header {
+  position: relative;
+}
+
+header img {
+  position: absolute;
+  max-width: 30vh;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: small;
+}
