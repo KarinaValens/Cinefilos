@@ -32,7 +32,7 @@ li {
 
 * {
   box-sizing: border-box;
-  /* outline: 2px dotted red; */
+  outline: 2px dotted red;
 }
 
 html {
@@ -41,11 +41,28 @@ html {
 
 /* ---header--- */
 
+header {
+  display: grid;
+  grid-template: 50% 50% / 1fr;
+  background: rgba(0, 0, 0, 0.5) url(../images/background.png) no-repeat top;
+  background-blend-mode: overlay;
+}
+
 header img {
-  max-width: 30vw;
+  max-width: 20vw;
 }
 
 h1 {
-  font: var(--heading-1) var(--primary-font);
+  font: var(--heading-1) var(--secondary-font);
+  color: var(--white);
+}
 
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+img {
+  /* erase me */
+  max-width: 5vw;
 }
