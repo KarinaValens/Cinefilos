@@ -26,7 +26,7 @@ li {
 
   --white-space: 1rem;
   --m3: 3rem 3rem 3rem 0;
-  --heading-1: 4vw;
+  --heading-1: 3.5rem;
 }
 /* --- based styles--- */
 
@@ -43,26 +43,52 @@ html {
 
 header {
   display: grid;
-  grid-template: 50% 50% / 1fr;
   background: rgba(0, 0, 0, 0.5) url(../images/background.png) no-repeat top;
   background-blend-mode: overlay;
+  height: 60vh;
 }
 
-header img {
+.logo {
+  place-self: start;
+  margin: 2rem 0 0 2rem;
+  grid-area: 1 / 1 / 2 / -1;
   max-width: 20vw;
 }
 
 h1 {
   font: var(--heading-1) var(--secondary-font);
   color: var(--white);
+  margin: 3rem 0 0 2rem;
+  grid-area: 1 / 1 / -1/-1;
+  place-self: center;
 }
 
 main {
+  max-width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 4vw;
+  margin: 2rem 3rem;
 }
 
-img {
-  /* erase me */
-  max-width: 5vw;
+.poster {
+  max-width: 100%;
+}
+
+p {
+  font: 1.3vw var(--primary-font);
+}
+
+a {
+  font-size: 0.8rem;
+  color: var(--link-color);
+}
+
+footer .logo {
+  margin: 2vw auto;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vw;
 }
