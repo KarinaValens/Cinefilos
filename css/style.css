@@ -26,9 +26,7 @@ li {
 
   --white-space: 1rem;
   --m3: 3rem 3rem 3rem 0;
-
-  /*   --font-size: calc(1rem + ((1vw - 0.48rem) * 0.6944));
- */
+  --heading-1: 4vw;
 }
 /* --- based styles--- */
 
@@ -45,4 +43,9 @@ html {
 
 header img {
   max-width: 30vw;
+}
+
+h1 {
+  font: var(--heading-1) var(--primary-font);
+
 }
