@@ -46,9 +46,14 @@ header {
   grid-template: 50% 50% / 1fr;
   background: rgba(0, 0, 0, 0.5) url(../images/background.png) no-repeat top;
   background-blend-mode: overlay;
+  height: 30vw;
+  place-items: center center;
 }
+.title_hp {
+  width: 80%;
+  }
 
-header img {
+.logo {
   max-width: 20vw;
 }
 
@@ -58,11 +63,32 @@ h1 {
 }
 
 main {
+  max-width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 4vw;
+  margin: 3vw 5vw;
 }
 
-img {
-  /* erase me */
-  max-width: 5vw;
+.poster {
+  max-width: 100%;
+  /* margin: auto 1.3vw; */
+}
+
+p {
+  font: 1.3vw var(--primary-font);
+}
+
+a {
+  font-size: 0.8rem;
+  color: var(--link-color);
+}
+
+footer .logo {
+  margin: 2vw auto;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vw;
 }
