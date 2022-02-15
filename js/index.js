@@ -5,7 +5,7 @@ const url = "https://cinefilos-6f5b.restdb.io/rest/movies?max=12";
 //The API-key:
 const options = {
   headers: {
-    "x-apikey": "b755415f32b40f2ef6a34957f62d45e34bed5",
+    "x-apikey": "620bc44f34fd621565858609",
   },
 };
 
