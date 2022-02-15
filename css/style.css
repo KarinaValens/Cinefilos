@@ -3,7 +3,9 @@
 body,
 a,
 ul,
-li {
+li,
+p,
+h3 {
   margin: 0%;
   padding: 0%;
   text-decoration: none;
@@ -30,10 +32,10 @@ li {
 }
 /* --- based styles--- */
 
-/* * {
+* {
   box-sizing: border-box;
-  outline: 2px dotted red;
-} */
+  /* outline: 2px dotted red; */
+}
 
 html {
   font-size: calc(1rem + ((1vw - 0.48rem) * 0.6944));
@@ -48,7 +50,7 @@ header {
   height: 60vh;
 }
 
-.logo {
+header .logo {
   place-self: start;
   margin: 2rem 0 0 2rem;
   grid-area: 1 / 1 / 2 / -1;
@@ -63,6 +65,7 @@ h1 {
   place-self: center;
 }
 
+/* ----main----- */
 main {
   max-width: 90%;
   display: grid;
@@ -79,23 +82,39 @@ p {
   font: 1.3vw var(--primary-font);
 }
 
-a {
+article a {
   font-size: 0.8rem;
   color: var(--link-color);
-}
-
-footer .logo {
-  margin: 2vw auto;
-}
-footer ul {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1vw;
 }
 
 .storyline {
   margin-top: 20vh;
   grid-column: 3/4;
+}
+
+/* ----footer---- */
+
+footer {
+  margin: 2vh 3vw;
+}
+
+footer .logo {
+  max-width: 15vw;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vw;
+  margin: 5vh auto 2vh auto;
+}
+
+footer a {
+  color: var(--main-text-color);
+}
+#copyRight {
+  display: inline;
+  margin: auto 40%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -108,5 +127,4 @@ footer ul {
   .storyline {
     grid-column: 1/2;
   }
-  
 }
