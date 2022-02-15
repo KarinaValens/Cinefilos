@@ -30,10 +30,10 @@ li {
 }
 /* --- based styles--- */
 
-* {
+/* * {
   box-sizing: border-box;
   outline: 2px dotted red;
-}
+} */
 
 html {
   font-size: calc(1rem + ((1vw - 0.48rem) * 0.6944));
@@ -91,4 +91,22 @@ footer ul {
   display: flex;
   flex-direction: column;
   row-gap: 1vw;
+}
+
+.storyline {
+  margin-top: 20vh;
+  grid-column: 3/4;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .movie_info {
+    grid-column: 1/2;
+  }
+  .storyline {
+    grid-column: 1/2;
+  }
+  
 }
