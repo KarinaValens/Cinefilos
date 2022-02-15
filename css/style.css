@@ -12,17 +12,23 @@ li {
 
 /* ---variables--- */
 :root {
-  --bg-color: #110401;
-  --link-color: #bf472c;
-  --link-hover-color: #ffffff;
-  --color-4: #9e0409;
-  --color-5: #707070;
+  --bg-color: #080705;
+  --bg-color-two: #40434e;
+  --link-color: #f00f0f;
+  --link-hover-color: #c70909;
+  --skin: #f18701;
+  --gold: #f3ac01;
+  --white: #fefefe;
 
-  --primary-font: "Montserrat", sans-serif;
-  --secondary-font: "Playfair Display", serif;
-  --main-text-color: #000;
+  --primary-font: "Oswald", sans-serif;
+  --secondary-font: "Fira Sans", serif;
+  --main-text-color: #080705;
 
   --white-space: 1rem;
+  --m3: 3rem 3rem 3rem 0;
+
+  /*   --font-size: calc(1rem + ((1vw - 0.48rem) * 0.6944));
+ */
 }
 /* --- based styles--- */
 
@@ -31,23 +37,12 @@ li {
   /* outline: 2px dotted red; */
 }
 
-/* debo revizar esta formula */
 html {
-  font-size: calc(1vw + 1vh + 0.5vmin);
+  font-size: calc(1rem + ((1vw - 0.48rem) * 0.6944));
 }
 
 /* ---header--- */
-header {
-  position: relative;
-}
 
 header img {
-  position: absolute;
-  max-width: 30vh;
-}
-
-header ul {
-  display: flex;
-  justify-content: space-around;
-  font-size: small;
+  max-width: 30vw;
 }
