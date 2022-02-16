@@ -5,7 +5,7 @@ const url = "https://cinefilos-6f5b.restdb.io/rest/movies?max=12";
 //The API-key:
 const options = {
   headers: {
-    "x-apikey": "620bc44f34fd621565858609",
+    "x-apikey": "620ccc0334fd621565858653",
   },
 };
 
@@ -17,9 +17,9 @@ fetch(url, options)
     return response.json();
   })
   .then((data) => {
-    //we have the data
-    console.log(data);
-    //handleData(data);
+    //data is available
+    //console.log(data);
+    handleData(data);
   })
   .catch((e) => {
     console.error("An error occured:", e.message);
