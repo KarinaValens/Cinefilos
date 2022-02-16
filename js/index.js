@@ -54,4 +54,6 @@ function showMovie(movie) {
   const parent = document.querySelector("main");
   //Append / Add movie there in the parent "main tag" in this case.
   parent.appendChild(clone);
+
+  //Nothing else
 }
