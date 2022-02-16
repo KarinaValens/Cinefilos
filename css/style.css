@@ -89,6 +89,17 @@ h3 {
   max-width: 100%;
 }
 
+h3 {
+  font: var(--primary-font);
+  color: var(--bg-color);
+}
+article:first-child {
+  color: var(--bg-color-two);
+}
+h2 {
+  font: 2vw var(--primary-font);
+}
+
 p {
   font: var(--body-font-size) var(--primary-font);
 }
@@ -96,6 +107,11 @@ p {
 article a {
   font-size: var(--body-font-size);
   color: var(--link-color);
+}
+
+article a:hover {
+  color: var(--link-hover-color);
+  transition: 1.5s;
 }
 
 dl {
@@ -112,7 +128,6 @@ dt {
 dd {
   font-size: var(--body-font-size);
 }
-
 .storyline {
   grid-area: 2 / 1 / 2 / -1;
 }
@@ -126,6 +141,7 @@ footer {
 
 footer .logo {
   max-width: 15vw;
+  margin-top: 6vh;
 }
 
 footer ul {
