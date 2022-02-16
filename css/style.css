@@ -27,9 +27,9 @@ li {
   --white-space: 1rem;
   --m3: 3rem 3rem 3rem 0;
   --heading-1: calc(2rem + 1vw);
-  --heading-2: bold calc(0.5rem + 1vw);
-  --heading-3: bold calc(0.3rem + 1vw);
-  --body-font-size: calc(0.2rem + 1vw);
+  --heading-2: bold calc(1rem + 6 * ((100vw - 320px) / 680));
+  --heading-3: bold calc(1rem + 4 * ((100vw - 320px) / 680));
+  --body-font-size: calc(1rem + 1 * ((100vw - 320px) / 680));
 }
 /* --- based styles--- */
 
@@ -39,7 +39,7 @@ li {
 }
 
 html {
-  font-size: 2vw;
+  font-size: 100%;
 }
 
 /* ---header--- */
@@ -60,7 +60,8 @@ header .logo {
 }
 
 h1 {
-  font: var(--heading-1) var(--secondary-font);
+  font: var(--secondary-font);
+  font-size: 3rem;
   color: var(--white);
   margin: 3rem 0 0 2rem;
   grid-area: 1 / 1 / -1/-1;
@@ -74,6 +75,14 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   column-gap: 4vw;
   margin: 2rem 3rem;
+}
+
+h2 {
+  font: var(--heading-2) var(--secondary-font);
+}
+
+h3 {
+  font: var(--heading-3) var(--secondary-font);
 }
 
 .poster {
@@ -92,6 +101,7 @@ article a {
 dl {
   grid-area: 1/ 3 / 1 / -1;
   place-self: center;
+  font-size: var(--body-font-size); 
 }
 
 dt {
@@ -135,7 +145,6 @@ footer a {
 }
 
 @media screen and (max-width: 1024px) {
-  
   .poster {
     grid-template-columns: 1 / -1;
     place-self: center;
