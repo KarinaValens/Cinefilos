@@ -41,7 +41,8 @@ li {
 
 html {
   font-size: 100%;
-  /* background-color: var(--bg-color); */
+  /* background-color: var(--bg-color);
+  color: var(--white); */
 }
 
 /* ---header--- */
@@ -78,7 +79,6 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   column-gap: 4vw;
   margin: 2rem 3rem;
-  
 }
 
 h2 {
@@ -97,9 +97,11 @@ h3 {
   font: var(--primary-font);
   color: var(--bg-color);
 }
-article:first-child {
+
+article {
   color: var(--bg-color-two);
 }
+
 h2 {
   font: 2vw var(--primary-font);
 }
@@ -153,10 +155,6 @@ footer ul {
   flex-direction: column;
   row-gap: 1vw;
   margin: 5vh auto 2vh auto;
-}
-
-footer a {
-  color: var(--main-text-color);
 }
 
 #copyRight {
