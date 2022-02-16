@@ -45,6 +45,14 @@ html {
 
 /* ---header--- */
 
+/* header {
+  display: grid;
+  background: rgba(0, 0, 0, 0.5) url(../images/background.png) no-repeat top;
+  background-blend-mode: overlay;
+  height: 60vh;
+} */
+
+
 header {
   display: grid;
   background: rgba(0, 0, 0, 0.5) url(../images/background.png) no-repeat top;
