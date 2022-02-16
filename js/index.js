@@ -18,8 +18,8 @@ fetch(url, options)
   })
   .then((data) => {
     //data is available
-    //console.log(data);
-    handleData(data);
+    console.log(data);
+    //handleData(data);
   })
   .catch((e) => {
     console.error("An error occured:", e.message);
