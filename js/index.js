@@ -38,17 +38,15 @@ function showMovie(movie) {
 
   //Populate with data
   // clone.querySelector("h2").textContent = movie.title;
-  clone.querySelector("h3").textContent = movie.title;
-  clone.querySelector("p").textContent = movie.releaseYear;
-  clone.querySelector("p:last-child").textContent = movie.plotSummary;
-  clone
-    .querySelector(".all-link")
-    .setAttribute("href", `./html/singleMovie.html?id=${movie._id}`);
+  clone.querySelector("h3").textContent = `${movie.title}`;
+  clone.querySelector(".year").textContent = `${movie.releaseYear}`;
+  clone.querySelector(".plotSummary").textContent = `${movie.plotSummary}`;
+  /* clone.querySelector("a").setAttribute("href", `./html/singleMovie.html?id=${movie._id}`); */
 
-  // //Poster
-  clone.querySelector(
-    ".poster"
-  ).src = `https://cinefilos-6f5b.restdb.io/media/${movie.cover}`;
+  //Poster
+
+  clone.querySelector(".poster").src = `https://cinefilos-6f5b.restdb.io/media/${movie.cover}`;
+  clone.querySelector(".poster").alt = `https://cinefilos-6f5b.restdb.io/media/${movie.title}`;
 
   //Grab Parent of the movie template. We chose the place where we want to paste the clones.
   const parent = document.querySelector("main");
