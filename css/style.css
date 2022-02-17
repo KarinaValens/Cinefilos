@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+
 /* ---Reset--- */
 
 body,
@@ -22,6 +24,7 @@ li {
   --white: #fefefe;
 
   --primary-font: "Oswald", sans-serif;
+  --movie-info-font: 'Hind', sans-serif;
   --secondary-font: "Fira Sans", serif;
   --main-text-color: #080705;
 
@@ -59,7 +62,7 @@ header .logo {
   place-self: start;
   margin: 2rem 0 0 2rem;
   grid-area: 1 / 1 / 2 / -1;
-  max-width: 20vw;
+  max-width: calc(10rem + 1 * ((90vw - 300px) / 680));
 }
 
 h1 {
@@ -80,7 +83,10 @@ main {
   margin: 2rem 3rem;
   
 }
-
+.movie-mediaq {
+  width: 85%;
+  margin: 5%;
+}
 h2 {
   font: var(--heading-2) var(--secondary-font);
 }
@@ -126,11 +132,12 @@ dl {
 
 dt {
   padding-top: 1.5vw;
-  font: var(--heading-3) var(--secondary-font);
+  font: var(--heading-3) var(--primary-font);
 }
 
 dd {
   font-size: var(--body-font-size);
+  font: var(--movie-info-font);
 }
 .storyline {
   grid-area: 2 / 1 / 2 / -1;
@@ -141,6 +148,7 @@ dd {
 footer {
   margin: 2vh 3vw;
   font-size: var(--body-font-size);
+  border-top: 1px solid var(--bg-color);
 }
 
 footer .logo {
@@ -175,5 +183,27 @@ footer a {
 
   .storyline {
     grid-area: 3 / 1 / 3 / -1;
+  }
+  .movie-mediaq img {
+    width: 80%;
+    grid-column: 1/4;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+  }
+  .movie-mediaq img {
+    width: 100%;
+    grid-column: 1/3;
+  }
+  header .logo {
+    margin: auto;
+    grid-row: 1/2;
+    height: 70%;
   }
 }
