@@ -257,15 +257,6 @@ footer .logo {
   margin-top: 6vh;
 }
 
-footer a {
-  /* color: var(--main-text-color); */
-}
-
-#copyRight {
-  display: inline;
-  margin: auto 40%;
-}
-
 .movie_info {
   grid-column: 1 / -1;
   /* grid-area: 2 / 1 / 2 / -1; */

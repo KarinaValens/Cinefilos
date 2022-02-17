@@ -1,106 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/585e945e26.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Movie</title>
-  </head>
 
-  <body>
-    <header>
-        <img class="logo" src="../images/final-logo.svg" alt="Cinefilos-Logo">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://kit.fontawesome.com/585e945e26.js" crossorigin="anonymous"></script>
+  <title>Movie</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="../images/final-logo.svg" alt="Cinefilos-Logo">
+  </header>
+  <main class="movie-mediaq">
+    <!--  <template id="movie-template"> -->
+
+    <h1 class="title_movie">Black Swan</h1>
+
+    <img class="poster" src="https://cinefilos-6f5b.restdb.io/media/620ba3f73abd1945001a0440" alt="Black Swan" />
+
+    <dl class="movie_info">
+      <dt>Movie</dt>
+      <dd class="title-single-movie">
         <h1>Black Swan</h1>
-    </header>
-    <main class="movie-mediaq">
-        <!--  <template id="movie-template"> -->
+      </dd>
+      <dt>Release year</dt>
+      <dd class="release_year">2017</dd>
+      <dt>Director</dt>
+      <dd class="director">Ari Aster</dd>
+      <dt>Cast</dt>
+      <dd class="actors">
+        <div>Florence Pugh, Jack Reynor, William Jackson Harper</div>
+      </dd>
+      <dt>Writting Credits</dt>
+      <dd class="writing_credits"></dd>
+      <dt>Rating (according IMDB)</dt>
+      <dd class="rating">7.1</dd>
+      <dt>Awards</dt>
+      <dd class="awards">27</dd>
+      <dt>Soundtrack</dt>
+      <dd class="soundstrack">Bobby Krlic</dd>
+      <dt>Budget</dt>
+      <dd class="budget">9$ million</dd>
+    </dl>
 
-      <h1 class="title_movie">Black Swan</h1>
+    <section class="storyline">
+      <h2>Storyline</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+        dictum dolor vel lorem imperdiet, vel molestie justo suscipit. Vivamus
+        erat urna, lacinia sit amet nisi id, fringilla sodales arcu. Sed vitae
+        magna tempor, fringilla risus nec, ultricies ante.
+      </p>
+      <p>
+        Duis vitae libero volutpat, congue arcu dictum, tempus eros. Sed urna
+        ante, suscipit molestie porta nec, ullamcorper vel nisl. Quisque
+        ornare velit ut mauris aliquet, sed fermentum nulla venenatis. Donec
+        consequat arcu eget ligula suscipit, nec pellentesque est
+        sodales.Suspendisse condimentum id felis non ultrices.
+      </p>
+      <p>
+        Sed dapibus ante et consequat fringilla. Duis ullamcorper hendrerit
+        est, ac lobortis lectus pulvinar vitae. Praesent vitae posuere lacus.
+        Ut porttitor leo vel porttitor interdum. Curabitur volutpat, massa
+        eget elementum scelerisque, ligula magna dignissim massa, ut maximus
+        ex turpis eget tellus.
+      </p>
+      <p>
+        Vivamus a libero id diam ullamcorper molestie at in urna. In id
+        aliquam augue, id feugiat dui. Sed laoreet justo velit, et tincidunt
+        odio laoreet in. Aliquam laoreet egestas nisl, et gravida sapien
+        ultricies in. Praesent eu vestibulum mi.
+      </p>
+    </section>
 
-      <img
-        class="poster"
-        src="https://cinefilos-6f5b.restdb.io/media/620ba3f73abd1945001a0440"
-        alt="Black Swan"
-      />
+    <!-- </template> -->
+  </main>
+  <footer>
+    <img class="logo" src="../images/Logo-01.svg" alt="Cinefilos Logo" />
+    <ul>
+      <li>
+        <i class="fab fa-linkedin-in"></i>
+        <p>Conect with us in Linkedin</p>
+      </li>
+      <li>
+        <i class="fab fa-instagram"></i>
+        <p>Follow us in Istagram</p>
+      </li>
+      <li>
+        <i class="fab fa-facebook-f"></i>
+        <p>We're also in Facebook</p>
+      </li>
+    </ul>
+  </footer>
 
-      <dl class="movie_info">
-        <dt>Movie</dt>
-        <dd class="title-single-movie"><h1>Black Swan</h1></dd>
-        <dt>Release year</dt>
-        <dd class="release_year">2017</dd>
-        <dt>Director</dt>
-        <dd class="director">Ari Aster</dd>
-        <dt>Cast</dt>
-        <dd class="actors">
-          <div>Florence Pugh, Jack Reynor, William Jackson Harper</div>
-        </dd>
-        <dt>Writting Credits</dt>
-        <dd class="writing_credits"></dd>
-        <dt>Rating (according IMDB)</dt>
-        <dd class="rating">7.1</dd>
-        <dt>Awards</dt>
-        <dd class="awards">27</dd>
-        <dt>Soundtrack</dt>
-        <dd class="soundstrack">Bobby Krlic</dd>
-        <dt>Budget</dt>
-        <dd class="budget">9$ million</dd>
-      </dl>
+  <script src="../js/singleMovie.js"></script>
+</body>
 
-      <section class="storyline">
-        <h2>Storyline</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          dictum dolor vel lorem imperdiet, vel molestie justo suscipit. Vivamus
-          erat urna, lacinia sit amet nisi id, fringilla sodales arcu. Sed vitae
-          magna tempor, fringilla risus nec, ultricies ante.
-        </p>
-        <p>
-          Duis vitae libero volutpat, congue arcu dictum, tempus eros. Sed urna
-          ante, suscipit molestie porta nec, ullamcorper vel nisl. Quisque
-          ornare velit ut mauris aliquet, sed fermentum nulla venenatis. Donec
-          consequat arcu eget ligula suscipit, nec pellentesque est
-          sodales.Suspendisse condimentum id felis non ultrices.
-        </p>
-        <p>
-          Sed dapibus ante et consequat fringilla. Duis ullamcorper hendrerit
-          est, ac lobortis lectus pulvinar vitae. Praesent vitae posuere lacus.
-          Ut porttitor leo vel porttitor interdum. Curabitur volutpat, massa
-          eget elementum scelerisque, ligula magna dignissim massa, ut maximus
-          ex turpis eget tellus.
-        </p>
-        <p>
-          Vivamus a libero id diam ullamcorper molestie at in urna. In id
-          aliquam augue, id feugiat dui. Sed laoreet justo velit, et tincidunt
-          odio laoreet in. Aliquam laoreet egestas nisl, et gravida sapien
-          ultricies in. Praesent eu vestibulum mi.
-        </p>
-      </section>
-
-      <!-- </template> -->
-    </main>
-    <footer>
-      <img class="logo" src="../images/Logo-01.svg" alt="Cinefilos Logo" />
-      <ul>
-        <li>
-          <i class="fab fa-linkedin-in"></i>
-          <p>Conect with us in Linkedin</p>
-        </li>
-        <li>
-          <i class="fab fa-instagram"></i>
-          <p>Follow us in Istagram</p>
-        </li>
-        <li>
-          <i class="fab fa-facebook-f"></i>
-          <p>We're also in Facebook</p>
-        </li>
-      </ul>
-    </footer>
-
-    <script src="../js/singleMovie.js"></script>
-  </body>
 </html>
