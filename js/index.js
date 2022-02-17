@@ -41,6 +41,7 @@ function showMovie(movie) {
   clone.querySelector("h3").textContent = movie.title;
   clone.querySelector("p").textContent = movie.releaseYear;
   clone.querySelector("p:last-child").textContent = movie.plotSummary;
+
   clone
     .querySelector(".all-link")
     .setAttribute("href", `./html/singleMovie.html?id=${movie._id}`);

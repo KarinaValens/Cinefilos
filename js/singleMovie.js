@@ -28,7 +28,8 @@ fetch(url, options)
 //Populate the page
 
 function showMovie(movie) {
-  document.querySelector("p").textContent = movie.title;
+  document.querySelector(".title_movie").textContent = movie.title;
+  document.querySelector(".title-single-movie").textContent = movie.title;
   document.querySelector(".storyline p").textContent = movie.plotSummary;
   document.querySelector(".release_year").textContent = movie.releaseYear;
   document.querySelector(".director").textContent = movie.director;
