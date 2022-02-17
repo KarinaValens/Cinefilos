@@ -50,7 +50,6 @@ li {
 
 html {
   font-size: 100%;
-  /* background-color: var(--bg-color); */
 }
 
 /* ---header--- */
@@ -78,7 +77,7 @@ h3 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: var(--heading-1);
   color: var(--white);
   margin: 3rem 0 0 2rem;
   grid-area: 1 / 1 / -1/-1;
@@ -98,14 +97,6 @@ main {
   margin: 5%;
 } */
 
-h2 {
-  /* font: var(--heading-2); */
-}
-
-h3 {
-  /* font: var(--heading-3); */
-}
-
 .poster {
   max-width: 100%;
 }
@@ -114,19 +105,12 @@ img {
   width: 100%;
 }
 
-h3 {
-  color: var(--bg-color);
-}
 article:first-child {
   color: var(--bg-color-two);
 }
 
 article {
   margin-bottom: 3rem;
-}
-
-h2 {
-  font: 2vw;
 }
 
 p {
@@ -216,6 +200,7 @@ dd {
   font-family: var(--secondary-font);
   margin: 0.25rem 0;
 }
+
 .storyline {
   grid-area: 2 / 1 / 2 / -1;
 }
