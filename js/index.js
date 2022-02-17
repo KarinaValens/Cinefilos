@@ -39,8 +39,9 @@ function showMovie(movie) {
   //Populate with data
   // clone.querySelector("h2").textContent = movie.title;
   clone.querySelector("h3").textContent = movie.title;
-  clone.querySelector("p").textContent = movie.releaseYear;
-  clone.querySelector("p:last-child").textContent = movie.plotSummary;
+  clone.querySelector(".year").textContent = movie.releaseYear;
+  clone.querySelector(".summary").textContent = movie.plotSummary;
+  clone.querySelector(".read-more").textContent = "Read more";
 
   clone
     .querySelector(".all-link")
