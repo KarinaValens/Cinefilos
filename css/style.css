@@ -48,7 +48,7 @@ html {
 
 header {
   display: grid;
-  background: rgba(0, 0, 0, 0.5) url(../images/background-image1.png) no-repeat
+  background: rgba(0, 0, 0, 0.2) url(../images/background-image1.png) no-repeat
     top;
   background-blend-mode: overlay;
   background-size: cover;
