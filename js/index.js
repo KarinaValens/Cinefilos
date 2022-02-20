@@ -50,7 +50,7 @@ function showMovie(movie) {
   // //Poster
   clone.querySelector(
     ".poster"
-  ).src = `https://cinefilos-6f5b.restdb.io/media/${movie.cover}`;
+  ).src = movie.imgUrl;
 
   //Grab Parent of the movie template. We chose the place where we want to paste the clones.
   const parent = document.querySelector("main");

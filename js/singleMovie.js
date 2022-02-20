@@ -39,7 +39,6 @@ function showMovie(movie) {
   document.querySelector(".awards").textContent = movie.awards;
   document.querySelector(".soundstrack").textContent = movie.soundtrackCredits;
   document.querySelector(".budget").textContent = movie.budgetMillionUsd;
-  document.querySelector(
-    ".poster"
-  ).src = `https://cinefilos-6f5b.restdb.io/media/${movie.cover}`;
+  document.querySelector(".poster").src = movie.imgUrl;
+  document.querySelector(".poster").alt = movie.title;
 }
